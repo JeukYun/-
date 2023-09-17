@@ -2,46 +2,46 @@
 
 - terminal 열기
 ## 1. 깃 저장소 생성
- git init : 현재 디렉토리를 git 저장소로 사용
+- git init : 현재 디렉토리를 git 저장소로 사용
 
 ## 2.  초기 설정
-git config --global user.name "깃닉네임"
-git config --global user.email "깃이메일"
+- git config --global user.name "깃닉네임"
+- git config --global user.email "깃이메일"
 
 ## 3. 스테이징에 올릴 파일 선택
-git add . : 모든 파일 스테이징에 올리기
-git add 파일명 : 선택된 파일만 올리기
+- git add . : 모든 파일 스테이징에 올리기
+- git add 파일명 : 선택된 파일만 올리기
 
 ## 4. 워킹트리 상태 확인
-git status / git status -s (요약해서 확인)
+- git status / git status -s (요약해서 확인)
  : 현재 워킹트리 (스테이징 상태인 파일, 아닌 파일 확인)
 
 ## 5. 스테이징 상태 취소
-git rm --cached 파일명 / git rm --cached .
+- git rm --cached 파일명 / git rm --cached .
  : git add로 올려놓은 파일 다시 끌어내리기
 
 ## 6. 커밋
-git commit -m "작성할 메모"
+- git commit -m "작성할 메모"
  : 스테이징 area에 있는 파일 commit
 
 ## 7. 커밋내용 확인
- : git log / git shortlog (요약해서 확인)
+- git log / git shortlog (요약해서 확인)
 
 ## 8. 현재 파일과 커밋된 파일 비교
-: git diff : 변경사항 있는경우 출력 
+- git diff : 변경사항 있는경우 출력 
 
 ## 9. 원격저장소 추가
-git remote -v
+- git remote -v
  : 깃 원격저장소 확인
-git remote add 이름(origin) 저장소주소 
+- git remote add 이름(origin) 저장소주소 
  : 깃 원격저장소 주소 업데이트
-git remote get-url 이름(origin)
+- git remote get-url 이름(origin)
  : 원격저장소 주소 가져오기
-git remote rm 이름(origin)
+- git remote rm 이름(origin)
  : 원격저장소 제거 
 
 ## 10. 원격저장소에 작업물 올리기(push)
-git push -u origin main (main은 branch 이름)
+- git push -u origin main (main은 branch 이름)
 : 원격저장소에 push하여 업데이트
 -> 만약 다른 작업자가 작업물을 수정 후 push하는 경우 오류 발생
 -> pull 후에 push 해야 함. 
@@ -52,12 +52,12 @@ git push -u origin main (main은 branch 이름)
 위 작업 이후 git commit / git push 를 수행하여야 한다.
 
 ## 11. pull 과 clone (원격저장소 작업물 불러오기)
-git pull origin main
+- git pull origin main
  : 깃 저장소에 있는 작업물 불러오기 
-git pull origin main --allow-unrelated-histories
+- git pull origin main --allow-unrelated-histories
  : 로컬 저장소와 원격 저장소 간의 이력이 서로 다른경우 사용 
 
-git clone 원격저장소주소
+- git clone 원격저장소주소
  : 깃 저장소에 있는 작업물 복사
 
 (pull vs clone 차이)
