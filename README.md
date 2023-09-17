@@ -91,3 +91,6 @@ pull : 원격 저장소의 내용을 가져와 현재 브랜치와 병합(merge)
 - git branch -D 브랜치명
 
 ** Merge시 다른 브랜치가 같은파일, 같은 라인에 수정을 하는경우 Conflict 발생하므로 같은파일을 다른 브랙치가 작업하지 않도록 하자! 
+
+## 5. add / commit 취소
+- git reset HEAD 파일명 / git restore --staged 파일명: add 취소
