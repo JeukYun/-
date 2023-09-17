@@ -98,3 +98,6 @@ pull : 원격 저장소의 내용을 가져와 현재 브랜치와 병합(merge)
 - git reset 커밋번호6자리 / git revert 커밋번호6자리 : 커밋번호는 git log에서 확인 가능
  : reset은 로그를 남기지 않고 revert는 로그를 남김
 * 협업하는 경우 revert 지향
+
+## 6. 특정 파일 수정 확인
+- git blame 파일명 : 특정 파일을 수정한 사람, 내용 확인 
